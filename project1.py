@@ -119,6 +119,12 @@ while True:
         print("-" * 55)
         print("Total price =", " " * 30, total_price)
         print("-" * 55)
+    customer=input("Do you want to another customer[yes|no]:-")
+    if customer=="yes":
+        continue
+    else:
+        print("show time is over")
+        break
 
 
 # In[ ]:
