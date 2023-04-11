@@ -18,9 +18,6 @@ while True:
     total_price=0
     pop_corn = 100
     cold_drink = 50
-    if Total_Seats == 0:
-        print("HOUSE FULL")
-        break
     name = input("Enter your name:--")
     if Normal_seats == 0:
         print("Normal Seat Not Avalible")
@@ -119,6 +116,9 @@ while True:
         print("-" * 55)
         print("Total price =", " " * 30, total_price)
         print("-" * 55)
+    if Total_Seats == 0:
+        print("HOUSE FULL")
+        break    
     customer = input("Do you want to another customer[yes|no]:-")
     if customer == "yes":
         continue
