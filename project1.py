@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 Total_Seats = 150
 Recliner_seats = 20
 Normal_seats = 130
@@ -52,6 +46,9 @@ while True:
         choice = "250"
         print("you select Normal seat")
         quantity = int(input("How many seats you want:--"))
+        if quantity> Normal_seats:
+            print("sorry that much seat you want not avalible")
+            continue
         total_price = Normal_seat_price * quantity
         Normal_seats -= quantity
         Total_Seats -= quantity
@@ -79,6 +76,9 @@ while True:
         choice = "400"
         print("you select Recliner seat")
         quantity = int(input("How many seats you want:--"))
+        if quantity> Recliner_seats:
+            print("sorry that much seat you want not avalible")
+            continue
         total_price = recliner_seat_price * quantity
         Recliner_seats -= quantity
         Total_Seats -= quantity
@@ -119,15 +119,12 @@ while True:
         print("-" * 55)
         print("Total price =", " " * 30, total_price)
         print("-" * 55)
-    customer=input("Do you want to another customer[yes|no]:-")
-    if customer=="yes":
+    customer = input("Do you want to another customer[yes|no]:-")
+    if customer == "yes":
         continue
     else:
         print("show time is over")
         break
-
-
-# In[ ]:
 
 
 
