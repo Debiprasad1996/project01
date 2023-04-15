@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 print("WELCOME TO CENTRAL LIBRARY")
 while True:
     user_name=input("Enter your user_name:-").strip()
